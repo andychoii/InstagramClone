@@ -11,10 +11,8 @@ class StoryWidget extends StatelessWidget {
       child: Column(
         children: [
           // A circular avatar showing the user's profile picture.
-          // Using a placeholder image from placekitten for demonstration purpose.
           CircleAvatar(
             radius: 40.0,
-            backgroundImage: NetworkImage('https://placekitten.com/100/100'),
           ),
           // A vertical spacer of 5 pixels to give some space between the avatar and the username
           SizedBox(height: 5.0),

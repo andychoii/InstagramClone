@@ -16,10 +16,14 @@ class PostWidget extends StatelessWidget {
           title: Text('Username'),
           // A trailing button with a vertical ellipsis icon,
           // which typically represent more options.
-          trailing: IconButton(icon: Icon(Icons.more_vert), onPressed: () {}),
+          trailing: IconButton(icon: Icon(Icons.more_horiz), onPressed: () {}),
         ),
-        // Displaying an image from the network.
-        Image.network('https://placekitten.com/500/500'),
+        Placeholder(
+          fallbackHeight: 200,
+          fallbackWidth: double.infinity,
+          color: Colors.grey,
+          strokeWidth: 2.0,
+        ),
         Row(
           children: [
             // Button to like the post
@@ -33,8 +37,6 @@ class PostWidget extends StatelessWidget {
         // Padding used to give some spacing around the widget
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12.0),
-          // Displaying information about who liked the post
-          child: Text('Liked by ... and others'),
         ),
       ],
     );

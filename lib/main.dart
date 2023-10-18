@@ -11,7 +11,7 @@ class InstagramCloneApp extends StatelessWidget {
     return MaterialApp(
       title: 'Instagram Clone', // Title used by the OS task switcher
       theme: ThemeData( // Defining the app's visual theme
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
       ),
       home: HomePage(), // SettingHomepage as the main screen
     );

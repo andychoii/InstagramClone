@@ -8,7 +8,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       // Setting up the app bar
       appBar: AppBar(
-        title: Text('Instagram', style: TextStyle(fontFamily: 'Billabong', fontSize: 35.0)),
+        leading:IconButton(icon: Icon(Icons.photo_camera), onPressed: () {}),
+        title: Text('Instagram', style: TextStyle(fontFamily: 'Billabong', fontSize: 35.0, color: Colors.black)),
         actions: [
           // An icon button for direct messages or other functionalities
           IconButton(icon: Icon(Icons.send), onPressed: () {}),
