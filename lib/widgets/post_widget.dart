@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 // Defines a widget for displaying a social media post
 class PostWidget extends StatelessWidget {
   @override
